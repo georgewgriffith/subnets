@@ -7,17 +7,37 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 <body>
-<h1>Visual Subnet Calculator</h1>
-<p>Enter the network you wish to subnet.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Visual Subnet Calculator</h1>
+        <p>Enter the network you wish to subnet.</p>
+      </div>
+      <div class="col-3">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+      </div>
+      <div class="col-1">
+        <p>/</p>
+      </div>      
+      <div class="col-3">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </div>
 
-<div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-  <label for="floatingInput">Email address</label>
-</div>
-<div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-  <label for="floatingPassword">Password</label>
-</div>
+
+
+
+
+
+
+
 
 <table class="table">
 <tr valign=top>
@@ -87,15 +107,10 @@ If you wish to save this subnetting for later, bookmark <a href="index.html" id=
 </tr>
 </thead>
 <tbody id="calcbody">
-<!--tr>
-<td>130.94.203.0/24</td>
-<td>130.94.203.0 - 130.94.203.255</td>
-<td>130.94.203.1 - 130.94.203.254 (254)</td>
-<td>Divide</td>
-</tr-->
 </tbody>
 </table>
   <p>Copyright &copy; 2009-2020 <a href="http://www.davidc.net/" target="_blank">David C. A. Croft</a>.
+  </div>
 <script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
