@@ -52,44 +52,6 @@ H1		{
    background-color:green;
   }  
 
-  .clearfix:before,.clearfix:after {
-    content: " ";display: table; /* 2 */}
-.clearfix:after {clear: both;}
-.clearfix {*zoom: 1;}
-
-.options {margin-bottom: 8px;}
-
-/* Style checkboxes as Toggle Buttons */
-.ck-button {
-    margin:2px;
-    background-color:#EFEFEF;
-    border-radius:4px;
-    border:1px solid #aaa;
-    overflow:auto;
-    float:left;
-    color:#aaa;
-}
-.ck-button:hover {
-    background-color:#ddd;
-}
-.ck-button label {
-    float:left;
-    width:auto;
-    margin-bottom: 0;
-}
-.ck-button label span {
-    text-align:center;
-    padding:3px 8px;
-    display:block;
-}
-.ck-button label input {
-    position:absolute;
-    top:-20px;
-}
-.ck-button input:checked + span {
-    color:#111;
-}
-
 body {
   padding: 15px;
 }
