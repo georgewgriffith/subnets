@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        
+
         <div class="row">
             <div class="col-4">
             <div class="btn-group btn-group-sm" data-toggle="buttons">
@@ -26,16 +26,15 @@
 
         <div class="row mt-3">
             <div class="col-8">
-            <table class="table table-striped table-sm table-bordered table-hover table-condensed">
+            <table class="table table-condensed table-hover table-bordered table-striped table-hideable">
                 <thead>
                     <tr>
-                        <th class="subnetAddress">subnetAddress</th>
-                        <th class="netmask">netmask</th>
-                        <th class="rangeOfAddresses">rangeOfAddresses</th>
-                        <th class="usableIps">usableIps</th>
-                        <th class="hosts">hosts</th>
-                        <th class="divide">divide</th>
-                        <th class="join">join</th>
+                        <th>subnetAddress<button class="pull-right btn btn-default btn-condensed hide-column" data-toggle="tooltip" data-placement="bottom" title="Hide Column"><i class="fa fa-eye-slash"></i></button></th>
+                        <th>rangeOfAddresses<button class="pull-right btn btn-default btn-condensed hide-column" data-toggle="tooltip" data-placement="bottom" title="Hide Column"><i class="fa fa-eye-slash"></i></button></th>
+                        <th>usableIps<button class="pull-right btn btn-default btn-condensed hide-column" data-toggle="tooltip" data-placement="bottom" title="Hide Column"><i class="fa fa-eye-slash"></i></button></th>
+                        <th>hosts<button class="pull-right btn btn-default btn-condensed hide-column" data-toggle="tooltip" data-placement="bottom" title="Hide Column"><i class="fa fa-eye-slash"></i></button></th>
+                        <th>divide<button class="pull-right btn btn-default btn-condensed hide-column" data-toggle="tooltip" data-placement="bottom" title="Hide Column"><i class="fa fa-eye-slash"></i></button></th>                        
+                        <th>join<button class="pull-right btn btn-default btn-condensed hide-column" data-toggle="tooltip" data-placement="bottom" title="Hide Column"><i class="fa fa-eye-slash"></i></button></th>                                                
                     </tr>
                 </thead>
                 <tbody>
@@ -67,6 +66,13 @@
                         <td class="join">join</td>
                     </tr>
                 </tbody>
+
+                <tfoot class="footer-restore-columns">
+                    <tr>
+                      <th colspan="4"><a class="restore-columns" href="#">Some columns hidden - click to show all</a></th>
+                    </tr>
+                  </tfoot>                
+
             </table>
             </div>
         </div>
